@@ -1,7 +1,7 @@
 .nav {
   position: fixed;
   width: 100vw;
-  height: 10vh;
+  height: 8vh;
   top: 0;
   display: flex;
   justify-content: flex-end;
@@ -9,7 +9,13 @@
   padding: 0 2em;
   z-index: 20;
   /* backdrop-filter: blur(15px); */
-  background-color: white;
+  background-color: var(--bg-secondary);
+}
+
+.nav__h2 {
+  font-size: 1.5rem;
+  color: var(--text);
+  transition: color 0.7s;
 }
 
 .nav__img {
@@ -38,7 +44,7 @@
 
 .nav__li>span {
   text-decoration: none;
-  color: var(--bg-secondary);
+  color: var(--bg);
   font-weight: var(--font-bold);
   transition: color 0.7s;
 }
@@ -46,13 +52,13 @@
 
 .nav__li>a {
   text-decoration: none;
-  color: var(--bg-secondary);
+  color: var(--bg);
   font-weight: var(--font-bold);
   transition: color 0.7s;
 }
 
 .nav__li>a:hover {
-  color: var(--bg);
+  color: var(--text);
 }
 
 .nav__li:active {
@@ -70,13 +76,14 @@
   .nav {
     backdrop-filter: none;
     padding: 0;
+    position: fixed;
   }
 
   .nav>span {
     display: block;
     font-size: 40px;
     cursor: pointer;
-    backdrop-filter: blur(15px);
+    /* backdrop-filter: blur(15px); */
     width: 100%;
     padding: 0%;
     text-align: right;
@@ -93,7 +100,7 @@
     backdrop-filter: blur(15px);
     height: 94vh;
     max-height: 564px;
-    overflow-y: auto;
+    overflow: hidden;
     transition: transform 0.5s ease-in-out;
   }
 
@@ -118,6 +125,7 @@
   .nav__li>span,
   .nav__li>a {
     font-size: 1.5rem;
+    color: var(--bg-secondary);
   }
 
   .nav__li {

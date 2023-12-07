@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const changeMode = document.querySelector('#toggleModeBtn');
   const modeText = document.querySelector('#modeText');
   const body = document.querySelector('body')
-  const headerImg = document.querySelector('.header__img')
+  const navImg = document.querySelector('.nav__img')
 
 
   changeMode.addEventListener('click', function (e) {
@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentMode === 'light_mode') {
       modeText.textContent = 'dark_mode';
       body.classList.remove('body--dark')
-      headerImg.setAttribute('src', './assets/img/header-img2.svg')
+      navImg.setAttribute('src', './assets/img/logo.svg')
     } else {
       modeText.textContent = 'light_mode';
       body.classList.add('body--dark')
-      headerImg.setAttribute('src', './assets/img/header-img.svg')
+      navImg.setAttribute('src', './assets/img/logo2.svg')
+
     }
 
     // window.alert('Cambio de modo realizado');

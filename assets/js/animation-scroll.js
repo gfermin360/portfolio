@@ -14,6 +14,22 @@ progressbar.animate(
   }
 );
 
+//animate header
+const headerImg = document.querySelector('.header__img')
+console.log(headerImg);
+headerImg.animate(
+  [
+    { opacity: 1, transform: 'translateX(0)'/*, scale: 0.7 */},
+    { opacity: 0.01, transform: 'translateX(50vw)'/*, scale: 1 */}
+  ],
+  {
+    fill: 'forwards',
+    timeline: new ScrollTimeline({
+      subject: document.documentElement,
+    }),
+  }
+);
+
 
 //animate sections
 
@@ -23,8 +39,8 @@ for (const section of sections) {
 
   section.animate(
     [
-      { opacity: 0.5, transform: 'translateY(150px)', scale: 0.7 },
-      { opacity: 1, transform: 'translateY(0)', scale: 1 }
+      { opacity: 0.01, transform: 'translateY(70vh)'/*, scale: 0.7 */},
+      { opacity: 1, transform: 'translateY(0)'/*, scale: 1 */}
     ],
     {
       fill: 'both',
@@ -37,4 +53,5 @@ for (const section of sections) {
     }
   );
 }
+
 

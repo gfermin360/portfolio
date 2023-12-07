@@ -1,6 +1,8 @@
 .section--reviws {
   width: 100%;
   max-width: 100%;
+  background-color: var(--bg-optional);
+  border-radius: 0;
 }
 
 .ul--review {
@@ -14,7 +16,7 @@
 
 .review-card {
   width: 300px;
-  background-color: var(--bg-header);
+  background-color: var(--bg-secondary);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);

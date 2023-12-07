@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./assets/css/aboutMe.css">
   <link rel="stylesheet" href="./assets/css/technologies.css">
   <link rel="stylesheet" href="./assets/css/contactMe.css">
-  <link rel="stylesheet" href="./assets/css/slider.css">
+  <link rel="stylesheet" href="./assets/css/projects.css">
   <link rel="stylesheet" href="./assets/css/reviews.css">
   <link rel="stylesheet" href="./assets/css/form.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
@@ -65,7 +65,11 @@
 
     <div class="nav--menu nav--transalate">
 
-      <img class="nav__img" src="./assets/img/logo.svg" alt="Logo Fermin Gutierrez">
+      <!-- <img class="nav__img" src="./assets/img/logo2.svg" alt="Logo Fermin Gutierrez"> -->
+
+      <h2 class="nav__h2">
+        Fermín Gutiérrez
+      </h2>
 
       <ul class='nav__ul'>
         <li class='nav__li' id="changeLanguageBtn"><span class="material-symbols-outlined">
@@ -105,7 +109,7 @@
 
     <div class="header__div">
 
-      <h1 class="header__h1">Fermín Gutiérrez</h1>
+      <!-- <h1 class="header__h1">Fermín Gutiérrez</h1> -->
 
       <h2 class="header__h2" data-translate-en="Web Developer" data-translate-es="Desarrollador web"> Desarrollador web</h2>
 
@@ -127,10 +131,9 @@
     <img class="header__img" src="./assets/img/header-img.svg" alt="Vector Programador">
 
     <video class="header__video" autoplay muted loop>
-      <source src="./assets/videos/header-background.mp4" type="video/mp4">
+      <source src="./assets/videos/header-background.webm" type="video/mp4">
     </video>
 
-    <!--div class="morph"></div-->
   </header>
 
   <main class="main">
@@ -180,47 +183,65 @@
 
     <section id="technologies" class="section">
       <h2 class="section__h2" data-translate-en="Technologies" data-translate-es="Tecnologías">Tecnologías</h2>
-      <div class="tech-cards">
+      <div class="tech tech-cards">
         <!-- HTML Card -->
         <article class="tech-card">
-          <span class="tech-card__front" data-tech="html">HTML</span>
+          <span class="tech-card__front" data-tech="html">
+            <img class="tech-card__img" src="./assets/img/tech-1.svg" alt="logo html">
+            <p class="tech-card__p">HTML</p>
+          </span>
           <span class="tech-card__back" data-translate-en="Experience: 1 year" data-translate-es="Experiencia: 1 año">
             Experiencia: 1 año</span>
         </article>
         <!-- CSS Card -->
         <article class="tech-card">
-          <span class="tech-card__front" data-tech="css">CSS</span>
+          <span class="tech-card__front" data-tech="css">
+            <img class="tech-card__img" src="./assets/img/tech-2.svg" alt="logo css">
+            <p class="tech-card__p">CSS</p>
+          </span>
           <span class="tech-card__back" data-translate-en="Experience: 1 year" data-translate-es="Experiencia: 1 año">
             Experiencia: 1 año</span>
         </article>
         <!-- JavaScript Card -->
         <article class="tech-card">
-          <span class="tech-card__front" data-tech="javascript">JavaScript</span>
+          <span class="tech-card__front" data-tech="javascript">
+            <img class="tech-card__img" src="./assets/img/tech-3.svg" alt="logo js">
+            <p class="tech-card__p">JavaScript</p>
+          </span>
           <span class="tech-card__back" data-translate-en="Experience: 1 year" data-translate-es="Experiencia: 1 año">
             Experiencia: 1 año</span>
         </article>
         <!-- Git Card -->
         <article class="tech-card">
-          <span class="tech-card__front" data-tech="git">Git</span>
+          <span class="tech-card__front" data-tech="git">
+            <img class="tech-card__img" src="./assets/img/tech-4.svg" alt="logo html">
+            <p class="tech-card__p">Git</p>
+          </span>
           <span class="tech-card__back" data-translate-en="Experience: 1 year" data-translate-es="Experiencia: 1 año">
             Experiencia: 1 año</span>
         </article>
         <!-- React Card -->
         <article class="tech-card">
-          <span class="tech-card__front" data-tech="react">React</span>
+          <span class="tech-card__front" data-tech="react">
+            <img class="tech-card__img" src="./assets/img/tech-5.svg" alt="logo html">
+            <p class="tech-card__p">React</p>
+          </span>
           <span class="tech-card__back" data-translate-en="Experience: 1 year" data-translate-es="Experiencia: 1 año">
             Experiencia: 1 año</span>
         </article>
         <!-- Node.js Card -->
         <article class="tech-card">
-          <span class="tech-card__front" data-tech="node">Node.js</span>
+          <span class="tech-card__front" data-tech="node">
+            <img class="tech-card__img" src="./assets/img/tech-6.svg" alt="logo html">
+            <p class="tech-card__p">Node.js</p>
+          </span>
           <span class="tech-card__back" data-translate-en="Experience: 1 year" data-translate-es="Experiencia: 1 año">
             Experiencia: 1 año</span>
         </article>
       </div>
     </section>
 
-    <section>
+    <section id="projects">
 
       <h2 class='section__h2'>Proyectos</h2>
 
@@ -258,23 +279,23 @@
         data-translate-es="Estoy disponible a través de múltiples canales. Elige el que prefieras:">Estoy disponible a
         través de múltiples canales. Elige el que prefieras:</p>
       <div class="contact-options">
-        <a class="contact-item" href="tel:+55435439">
+        <a class="contact-item" href="tel:+573145872733">
           <i class='icon bx bx-phone'></i>
           <span data-translate-en="Call Me" data-translate-es="Llámame">Llámame</span>
         </a>
-        <a class="contact-item" href="mailto:martinez@gmail.com">
+        <a class="contact-item" href="mailto:gfermin1987@gmail.com">
           <i class='icon bx bxl-gmail'></i>
           <span data-translate-en="Send me an email" data-translate-es="Envíame un correo">Envíame un correo</span>
         </a>
-        <a class="contact-item" href="https://wa.me/+544535" target="_blank">
+        <a class="contact-item" href="https://wa.me/+573145872733" target="_blank">
           <i class='icon bx bxl-whatsapp'></i>
           <span data-translate-en="WhatsApp" data-translate-es="WhatsApp">WhatsApp</span>
         </a>
-        <a class="contact-item" href="https://www.linkedin.com/in/gabrielmartinezghioma/" target="_blank">
+        <a class="contact-item" href="#" target="_blank">
           <i class='icon bx bxl-linkedin'></i>
           <span data-translate-en="LinkedIn" data-translate-es="LinkedIn">LinkedIn</span>
         </a>
-        <a class="contact-item" href="https://github.com/gabrielmartinezghioma" target="_blank">
+        <a class="contact-item" href="https://github.com/gfermin360" target="_blank">
           <i class='icon bx bxl-github'></i>
           <span data-translate-en="GitHub" data-translate-es="GitHub">GitHub</span>
         </a>
@@ -285,7 +306,7 @@
   <footer class="footer-distributed">
 
     <div class="footer__left">
-      <h3 class="footer__title" data-translate-en="Gabriel Martinez" data-translate-es="Gabriel Martinez">Fermín Gutiérrez</h3>
+      <h3 class="footer__title" data-translate-en="Fermín Gutiérrez" data-translate-es="Fermín Gutiérrez">Fermín Gutiérrez</h3>
       <p class="footer__description"
         data-translate-en="Full Stack developer specialized in creating web interfaces with React and developing APIs with Node.js and Express."
         data-translate-es="Desarrollador Full Stack especializado en la creación de interfaces web con React y el desarrollo de API con Node.js y Express.">
@@ -295,19 +316,21 @@
 
     <div class="footer__center">
       <div class="footer__icon"><i class="bx bx-map"></i></div>
-      <p class="footer__location" data-translate-en="Cordoba, Argentina" data-translate-es="Córdoba, Argentina">Barranquilla,
+      <p class="footer__location" data-translate-en="Barranquilla,
+      Colombia" data-translate-es="Barranquilla,
+      Colombia">Barranquilla,
         Colombia</p>
       <p class="footer__copyright" id="yearText"></p>
     </div>
 
     <div class="footer__right">
-      <a href="https://github.com/yourprofile" class="footer__social-icon footer__social-icon--facebook">
+      <a href="https://github.com/gfermin360" class="footer__social-icon footer__social-icon--facebook">
         <i class='bx bxl-github'></i>
       </a>
-      <a href="https://youtube.com/yourprofile" class="footer__social-icon footer__social-icon--twitter">
+      <a href="#" class="footer__social-icon footer__social-icon--twitter">
         <i class='bx bxl-youtube'></i>
       </a>
-      <a href="https://linkedin.com/yourprofile" class="footer__social-icon footer__social-icon--linkedin">
+      <a href="#" class="footer__social-icon footer__social-icon--linkedin">
         <i class="bx bxl-linkedin"></i>
       </a>
     </div>

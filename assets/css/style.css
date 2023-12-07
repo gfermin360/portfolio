@@ -17,8 +17,9 @@
 }
 
 .body--ligth {
-  --bg: #ffffff;
-  --bg-secondary: #4A87CE;
+  --bg: #4A87CE;
+  --bg-secondary: #ffffff;
+  --bg-optional: #4075b1;
   --text: #211D1D;
 
   /* --morph1: #e5b2f7;
@@ -28,6 +29,7 @@
 .body--dark {
   --bg: #211D1D;
   --bg-secondary: #4A87CE;
+  --bg-optional: #333;
   --text: #ffffff;
 
   /* --morph1: #9400D3;
@@ -60,7 +62,8 @@
 }
 
 ::-webkit-scrollbar:horizontal {
-  height: 10px;
+  height: 0;
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -82,9 +85,9 @@
 
 #progress {
   height: 4px;
-  background-color: var(--bg-secondary);
+  background-color: var(--text);
   position: fixed;
-  top: 10vh;
+  top: 8vh;
   left: 0;
   z-index: 10;
 }
