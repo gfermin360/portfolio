@@ -1,10 +1,10 @@
 :root {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  --text-ligth: 200;
-  --text-medium: 400;
-  --text-bold: 600;
+  --text-ligth: 300;
+  --text-medium: 500;
+  --text-bold: 700;
   scroll-behavior: smooth;
 }
 
@@ -17,21 +17,21 @@
 }
 
 .body--ligth {
-  --bg: #f0f0f0;
-  --bg-secondary: white;
-  --text: #222;
+  --bg: #ffffff;
+  --bg-secondary: #4A87CE;
+  --text: #211D1D;
 
-  --morph1: #e5b2f7;
-  --morph2: #fff4a3;
+  /* --morph1: #e5b2f7;
+  --morph2: #fff4a3; */
 }
 
 .body--dark {
-  --bg: #070732;
-  --bg-secondary: black;
-  --text: #f0f0f0;
+  --bg: #211D1D;
+  --bg-secondary: #4A87CE;
+  --text: #ffffff;
 
-  --morph1: #9400D3;
-  --morph2: #FFD700;
+  /* --morph1: #9400D3;
+  --morph2: #FFD700; */
 }
 
 .body {
@@ -81,10 +81,10 @@
 }
 
 #progress {
-  height: 2px;
-  background-color: var(--text);
+  height: 4px;
+  background-color: var(--bg-secondary);
   position: fixed;
-  top: 6vh;
+  top: 10vh;
   left: 0;
   z-index: 10;
 }
