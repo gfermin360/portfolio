@@ -76,7 +76,6 @@
   .nav {
     backdrop-filter: none;
     padding: 0;
-    position: fixed;
   }
 
   .nav>span {
