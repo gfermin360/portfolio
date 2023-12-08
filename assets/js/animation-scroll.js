@@ -9,24 +9,22 @@ progressbar.animate(
   {
     fill: 'forwards',
     timeline: new ScrollTimeline({
-      subject: document.documentElement,
+      subject: progressbar,
     }),
   }
 );
 
 //animate header
 const headerImg = document.querySelector('.header__img')
-console.log(headerImg);
 headerImg.animate(
   [
     { opacity: 1, transform: 'translateX(0)'/*, scale: 0.7 */},
-    { opacity: 0.01, transform: 'translateX(50vw)'/*, scale: 1 */},
-    { overflow: hidden}
+    { opacity: 0.01, transform: 'translateX(20vw)'/*, scale: 1 */}
   ],
   {
-    fill: 'forwards',
+    fill: 'both',
     timeline: new ScrollTimeline({
-      subject: document.documentElement,
+      subject: headerImg,
     }),
   }
 );
