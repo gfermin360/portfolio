@@ -20,7 +20,8 @@ console.log(headerImg);
 headerImg.animate(
   [
     { opacity: 1, transform: 'translateX(0)'/*, scale: 0.7 */},
-    { opacity: 0.01, transform: 'translateX(50vw)'/*, scale: 1 */}
+    { opacity: 0.01, transform: 'translateX(50vw)'/*, scale: 1 */},
+    { overflow: hidden}
   ],
   {
     fill: 'forwards',
